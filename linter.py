@@ -14,7 +14,7 @@ from SublimeLinter.lint import Linter
 class Proselint(Linter):
   """Provides an interface to proselint."""
 
-  cmd = 'proselint'
+  cmd = 'proselint ${temp_file}'
   regex = (r'^.+?:(?P<line>\d+):(?P<col>\d+): \S* (?P<message>.+)')
   multiline = True
   line_col_base = (1, 1)
